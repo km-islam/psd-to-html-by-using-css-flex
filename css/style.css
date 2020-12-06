@@ -603,6 +603,12 @@ body {
     border: 1px solid #eaeaea;
     margin: 0 15px;
 }
+.mamber-itam:nth-child(1){
+    margin-left: 0px;
+}
+.mamber-itam:nth-child(4){
+    margin-right: 0px;
+}
 .mamber-itam:hover{
     box-shadow: var(--shadow);
     background: var(--bg);
@@ -660,4 +666,125 @@ body {
     background: var(--hover);
     border: none;
     color: #ffffff;
+}
+
+/* -------- testimnial part css -------- */
+#testimnial{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background:  var(--bg);
+}
+.testimnial-content{
+    display: flex;
+    flex-grow: 1;
+}
+.testi-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.testi-right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.testi-itam{
+    display: flex;
+    position: relative;
+}
+.testi-text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding-left: 75px;
+    padding-right: 60px;
+}
+.testi-itam-image {
+    width: 100px;
+    height: 100px;
+    
+}
+.testi-itam-image img{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+.testi-itam p{
+    font-size: 11pt;
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+    line-height: 21pt;
+
+}
+.testi-itam h4{
+    font-size: 16pt;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+    color: var(--primary);
+    text-transform: uppercase;
+
+}
+.testi-itam span{
+    display: block;
+    color: #666;
+    padding-top: 5px;
+}
+.testi-title {
+    display: flex;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.testi-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary);
+    max-width: 450px;
+    text-transform: uppercase;
+}
+
+.testi-title span {
+    width: 200px;
+    height: 1px;
+    background: #eaeaea;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
+.testi-title span::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    background: var(--hover);
+    width: 30px;
+    height: 5px;
+}
+.testi-slider-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.testi-slider-btn ul {
+    display: flex;
+}
+
+.testi-slider-btn li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+    margin-right: 5px;
+    transition: all linear.3s;
+}
+
+.testi-slider-btn li:hover {
+    background: var(--hover);
 }
